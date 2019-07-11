@@ -1,0 +1,115 @@
+% TODO:
+
+
+\documentclass[12pt, a4paper]{scrartcl}
+
+\usepackage{graphicx}
+\usepackage[ngerman]{babel}
+\RequirePackage[ngerman=ngerman-x-latest]{hyphsubst}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[autostyle,german=guillemets]{csquotes}
+\usepackage{verbatim}
+\usepackage[singlespacing, onehalfspacing]{setspace}
+\usepackage{lmodern}
+\usepackage{pdfpages} % gut für Anhänge!
+\usepackage{apacite}
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage{pdflscape}
+%\usepackage{tabularx}
+\usepackage{blindtext}
+\usepackage{lipsum}
+%\usepackage{relsize}
+\usepackage{tocstyle}
+\usepackage{color, colortbl}
+%\usepackage[all]{nowidow}
+\usepackage[pagewise]{lineno}
+\usepackage{longtable}
+
+
+
+\begin{document}
+
+\title{Unterrichtsentwurf für eine Lehrprobe im Fach Politik}
+\author{Dr. Hendrik Bunke}
+\date{}
+\thispagestyle{empty}
+
+%\maketitle
+\begin{center}
+{\includegraphics[height=1.1cm]{lis.png}}
+\singlespacing
+{\Huge
+    {\textsf
+        {\textbf{Unterrichtsentwurf für eine Lehrprobe im Fach Politik}
+        }
+    }
+}
+
+\vspace{0.5cm}
+\Large{Dr. Hendrik Bunke}
+
+
+
+\end{center}
+
+
+
+\input{0.title.tex}
+
+\footnotesize
+\renewcommand{\contentsname}{Gliederung}
+\usetocstyle{classic} %bewirkt, dass die Seitenzahlen genauso wie die Title formatiert sind (Größe!)
+\tableofcontents
+
+\newpage
+\setcounter{page}{1}
+% \onehalfspacing
+\normalsize
+
+% LIS Vorgabe ist 28-31 Zeilen pro Seite, weswegen das erheblich schönere
+% \onehalfspacing von LaTeX nicht geht, damit wären's so rund 35. Keine Ahnung,
+% ob das ein Problem wäre, aber sicher ist sicher
+\setstretch{1,33}
+
+%\linenumbers   % Zeilennummern um zu testen
+%\modulolinenumbers[5]
+
+\input{1.lerngruppe}
+\input{2.einordnung}
+\input{3.sachanalyse}
+\input{4.didaktik}
+\input{5.kompetenzen}
+\input{6.methodik}
+\input{7.verlaufsplan}
+
+
+%\newpage
+
+\pagestyle{empty}
+\singlespacing
+\bibliography{zotero.bib}
+\bibliographystyle{apacite}
+
+\newpage
+\section*{Erklärung}
+Diese schriftliche Planung habe ich selbstständig angefertigt. Andere als die
+angegebenen Hilfsmittel habe ich nicht benutzt. Die Stellen der schriftlichen
+Ausarbeitung, die anderen Werken, auch eigenen oder fremden unveröffentlichten
+Prüfungsarbeiten, im Wortlaut oder ihrem wesentlichem Inhalt nach entnommen
+sind, habe ich mit genauer Angabe der Quelle kenntlich gemacht.
+
+\vspace{1cm}Bremen, 29.03.2019
+
+\vspace{3cm}(Dr. Hendrik Bunke)
+
+
+
+\includepdf[pages=-]{arbeitsblaetter.pdf}
+\includepdf[pages=-]{praesentation.pdf}
+\includepdf[pages=-]{padlet.pdf}
+\includepdf[pages=-]{hausaufgabe.pdf}
+
+
+\end{document}
