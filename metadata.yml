@@ -1,0 +1,30 @@
+'@context': https://schema.org/
+creativeWorkStatus: Published
+type: LearningResource
+name: >-
+  Unterrichtsentwurf für eine Lehrprobe im Fach Politik: Wahlbeteiligung als
+  sozialstrukturelles Problem
+description: Lehrprobe Politik
+license: https://creativecommons.org/licenses/by/4.0/deed.de
+id: https://github.com/hbunke/lehrprobe-politik
+creator:
+  - givenName: Hendrik
+    familyName: Bunke
+    id: 0000-0002-1516-2382
+    type: Person
+keywords:
+  - OER
+  - Schule
+inLanguage:
+  - de
+about:
+  - https://w3id.org/kim/hochschulfaechersystematik/n052
+  - https://w3id.org/kim/hochschulfaechersystematik/n129
+  - https://w3id.org/kim/hochschulfaechersystematik/n25
+learningResourceType:
+  - https://w3id.org/kim/hcrt/text
+educationalLevel:
+  - https://w3id.org/kim/educationalLevel/level_A
+  - https://w3id.org/kim/educationalLevel/level_B
+  - https://w3id.org/kim/educationalLevel/level_C
+datePublished: '2019-10-19'
